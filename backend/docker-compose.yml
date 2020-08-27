@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+  db:
+    build: ./docker/.docker/mysql
+    container_name: codeb
+    restart: always
+    tty: true
+    ports:
+      - "3306:3306"
+    volumes:
+      - ./.docker/dbdata:/var/lib/mysql
+    environment:
+      - MYSQL_DATABASE=adonis
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_USER=root
