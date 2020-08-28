@@ -28,7 +28,7 @@ const NormalLoginForm = () => {
           },
         ]}
       >
-        <Input prefix={<UserOutlined className="site-form-item-icon" />} placeholder="Username" />
+        <Input prefix={<UserOutlined className="site-form-item-icon" />} placeholder="Nome de usuário" />
       </Form.Item>
       <Form.Item
         name="password"
@@ -42,7 +42,7 @@ const NormalLoginForm = () => {
         <Input
           prefix={<LockOutlined className="site-form-item-icon" />}
           type="password"
-          placeholder="Password"
+          placeholder="Senha"
         />
       </Form.Item>
       <Form.Item>
